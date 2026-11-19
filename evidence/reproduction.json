@@ -1,0 +1,48 @@
+{
+  "budget_zero": {
+    "accepted_as_exhausted": false,
+    "checks_done": 0,
+    "n": 5,
+    "next_x": 2,
+    "status": "unknown"
+  },
+  "certificate_schema_version": 1,
+  "cross_check": {
+    "all_solution_sets_agree": true,
+    "branches": 2558,
+    "branches_with_witness": 796,
+    "branches_without_witness": 1762,
+    "n_max": 80,
+    "n_min": 2,
+    "ordered_y_z_pairs": 4278,
+    "solution_rows_encoding": "ASCII n,x,y,z\\n, lexicographic numeric order",
+    "solution_rows_sha256": "a91903450af12f359e3bba8b610187292346c23eee48f152d0f89b584d0a8259",
+    "x_max_inclusive": "floor(3*n/4)+2",
+    "x_min": 1
+  },
+  "report_format": 1,
+  "scope_note": "Finite Python experiment; not a formal proof or a proof of the conjecture.",
+  "source_sha256": {
+    "lean/Contracts.lean": "611b2f22da9d3e2e4df6385bd6d03182ec5b9b892d0cd4a588339038a7cf2cb7",
+    "scripts/reproduce.py": "4ba982447f609146fd3813fe71901d43245ed539622c5beba0244bad5771bf82",
+    "src/erdos_straus/__init__.py": "77460d042d0e37b2a4d0c3a5cf87b987cb92aecc87805f107a613ed860b00d76",
+    "src/erdos_straus/__main__.py": "a01f8e84a19df38b3cc82e4db04f541f573c4f6bd61031cf51f886a42b5a5017",
+    "src/erdos_straus/certificates.py": "93121d9b0218c18c33337abc8da88ccb95b73b3882361390c2558c59f524b8bd",
+    "src/erdos_straus/cli.py": "ced114e2b688472779f991ac0851a9deb6436c589a0620b5216088461c2d60f1",
+    "src/erdos_straus/core.py": "94d185f46289db70d5acc915b70c74399f8e95da0cf1c801ee68e9c329e55ceb",
+    "src/erdos_straus/reference.py": "e3971a425aa11f847c1e6c7a04de5484e38086feb3d162e18089f5a638b8a25f",
+    "tests/test_certificates.py": "6068806147597f0f72fb64a6348654e1a56d2b85bc6f1cf0360671c0e8180941",
+    "tests/test_cli.py": "87fc61481e1a0c04480ffb5d5b4651a9a3e0b3793734f3e705c0ba193b5558d5",
+    "tests/test_core.py": "2b95c4b2dca9d2b978d3340e3ca824e261da4c857da82ccebd3a969161bdba45"
+  },
+  "tamper_rejections": {
+    "duplicate_y": true,
+    "incomplete_root": true,
+    "incorrect_remainder": true,
+    "missing_row": true,
+    "reordered_rows": true,
+    "wrong_n_scope": true,
+    "wrong_x_scope": true,
+    "zero_remainder": true
+  }
+}

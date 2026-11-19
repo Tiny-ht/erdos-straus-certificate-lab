@@ -1,0 +1,17 @@
+{
+  "kind": "no_x",
+  "n": 5,
+  "remainders": [
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "schema": "erdos-straus-certificate",
+  "version": 1,
+  "x": 3
+}

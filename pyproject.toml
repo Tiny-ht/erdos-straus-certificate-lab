@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erdos-straus-certificate-lab"
+version = "0.1.0"
+description = "Exact, scoped certificates for finite Erdos-Straus research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+es-certs = "erdos_straus.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Tiny-ht/erdos-straus-certificate-lab"
+
+[tool.setuptools.packages.find]
+where = ["src"]

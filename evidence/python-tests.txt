@@ -1,0 +1,36 @@
+Command: PYTHONPATH=src python -m unittest discover -s tests -v
+Python: 3.12.14
+
+test_bool_float_and_wrong_types_are_rejected (test_certificates.StrictTransportTests.test_bool_float_and_wrong_types_are_rejected) ... ok
+test_decode_does_not_promote_a_false_claim (test_certificates.StrictTransportTests.test_decode_does_not_promote_a_false_claim) ... ok
+test_duplicate_json_keys_are_rejected (test_certificates.StrictTransportTests.test_duplicate_json_keys_are_rejected) ... ok
+test_extra_missing_or_unsupported_fields_are_rejected (test_certificates.StrictTransportTests.test_extra_missing_or_unsupported_fields_are_rejected) ... ok
+test_roundtrips (test_certificates.StrictTransportTests.test_roundtrips) ... ok
+test_serialization_also_validates_types (test_certificates.StrictTransportTests.test_serialization_also_validates_types) ... ok
+test_unknown_cannot_be_serialized_as_a_certificate (test_certificates.StrictTransportTests.test_unknown_cannot_be_serialized_as_a_certificate) ... ok
+test_branch_stdout_and_scope_verification (test_cli.CommandLineTests.test_branch_stdout_and_scope_verification) ... ok
+test_mathematically_invalid_certificate_is_rejected (test_cli.CommandLineTests.test_mathematically_invalid_certificate_is_rejected) ... ok
+test_normal_input_errors_have_exit_two_without_traceback (test_cli.CommandLineTests.test_normal_input_errors_have_exit_two_without_traceback) ... ok
+test_output_file_and_positive_witness (test_cli.CommandLineTests.test_output_file_and_positive_witness) ... ok
+test_search_found_and_budget_unknown_are_distinct (test_cli.CommandLineTests.test_search_found_and_budget_unknown_are_distinct) ... ok
+test_unknown_can_be_written_without_becoming_a_certificate (test_cli.CommandLineTests.test_unknown_can_be_written_without_becoming_a_certificate) ... ok
+test_verify_requires_scope_appropriate_to_certificate (test_cli.CommandLineTests.test_verify_requires_scope_appropriate_to_certificate) ... ok
+test_budget_cannot_publish_a_partial_x_as_closed (test_core.ScopedCertificateTests.test_budget_cannot_publish_a_partial_x_as_closed) ... ok
+test_budget_exhaustion_is_unknown (test_core.ScopedCertificateTests.test_budget_exhaustion_is_unknown) ... ok
+test_certificates_are_immutable (test_core.ScopedCertificateTests.test_certificates_are_immutable) ... ok
+test_factor_check_covers_2558_branches (test_core.ScopedCertificateTests.test_factor_check_covers_2558_branches) ... ok
+test_input_errors_are_explicit (test_core.ScopedCertificateTests.test_input_errors_are_explicit) ... ok
+test_malformed_in_memory_certificates_fail_closed (test_core.ScopedCertificateTests.test_malformed_in_memory_certificates_fail_closed) ... ok
+test_out_of_range_x_is_a_scoped_empty_branch (test_core.ScopedCertificateTests.test_out_of_range_x_is_a_scoped_empty_branch) ... ok
+test_real_closed_branch_and_surviving_witness (test_core.ScopedCertificateTests.test_real_closed_branch_and_surviving_witness) ... ok
+test_root_rejects_partial_or_fabricated_coverage (test_core.ScopedCertificateTests.test_root_rejects_partial_or_fabricated_coverage) ... ok
+test_scope_and_version_are_bound (test_core.ScopedCertificateTests.test_scope_and_version_are_bound) ... ok
+test_tampered_remainders_and_coverage_are_rejected (test_core.ScopedCertificateTests.test_tampered_remainders_and_coverage_are_rejected) ... ok
+test_wrong_witness_is_not_a_negative_certificate (test_core.ScopedCertificateTests.test_wrong_witness_is_not_a_negative_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.516s
+
+OK
+
+Exit code: 0
