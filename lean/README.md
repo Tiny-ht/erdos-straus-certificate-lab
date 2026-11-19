@@ -57,8 +57,15 @@ lake env lean Contracts.lean
 CI 应在 `lean/` 目录执行同样的命令，并把工作流运行链接绑定到具体 commit。
 本项目没有外部 Lean 包依赖，因此无需下载 mathlib 缓存。
 
+本目录仍然提交 `lake-manifest.json`：其 `packages` 数组为空，记录没有外部依赖，
+而不是省略清单文件。使用的 `1.1.0` 清单格式、根包名和目录字段，依据
+Lean 4.19.0 的 `Lake/Load/Manifest.lean` 核对。部分 CI 工具在构建前要求清单存在；
+清单存在或格式正确本身不代表 Lean 源码已经构建成功。修改依赖配置后，应运行
+`lake update` 并将相应清单变更一起提交。
+
 ## 官方参考
 
 - [Lean 4.19.0 发行说明](https://lean-lang.org/doc/reference/latest/releases/v4.19.0/)
 - [Lean 4.19.0 的 Lake 文档](https://lean-lang.org/doc/reference/4.19.0/Build-Tools-and-Distribution/Lake/)
+- [Lean 4.19.0 的 Lake 清单格式源码](https://github.com/leanprover/lean4/blob/v4.19.0/src/lake/Lake/Load/Manifest.lean)
 - [Lean 证明验证指南](https://lean-lang.org/doc/reference/latest/ValidatingProofs/)
