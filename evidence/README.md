@@ -4,6 +4,7 @@
 
 - `reproduction.json`：有限交叉核验的范围、结果、篡改拒绝结果、源码 SHA-256。由 `python scripts/reproduce.py` 生成；`python scripts/reproduce.py --check` 重算并逐字节比较，不改写文件。
 - `python-tests.txt`：发布准备期间实际执行 unittest 的原始输出，附执行命令和 Python 版本。耗时与版本不参与确定性比较。
+- [`ci.md`](ci.md)：首次完整通过的公开 CI 运行、固定提交、各任务链接与日志摘录。
 - GitHub Actions 的 [`ci.yml`](../.github/workflows/ci.yml) 会在新的提交上重新运行 Python 测试、样例核验和 Lean 编译。请检查对应提交的运行状态与日志，不要只看一张静态截图或仓库首页的文字。
 
 `reproduction.json` 不记录用户名、机器路径或环境变量。报告的源码哈希便于发现改动；任何人都能生成哈希，因此哈希本身不认证发布者身份，也不能替代重放。

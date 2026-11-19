@@ -128,6 +128,7 @@ python scripts/reproduce.py --check
 - [输入 5 的正见证](examples/witness_5.json)
 - [可复现检查报告](evidence/reproduction.json)
 - [本地 Python 测试记录](evidence/python-tests.txt)
+- [公开 CI 的固定提交与运行记录](evidence/ci.md)
 
 这些文件是可重复计算的本地证据，不是独立第三方认证。公开的 [GitHub Actions 工作流](https://github.com/Tiny-ht/erdos-straus-certificate-lab/actions/workflows/ci.yml) 在实际运行后提供对应提交的外部执行日志。核验时应同时记录 **commit SHA 和具体 workflow run 链接**，避免把不同版本的代码和结果混在一起。
 
@@ -136,8 +137,8 @@ python scripts/reproduce.py --check
 | 层次 | 当前范围 |
 |---|---|
 | Python 实现 | 本地执行过整数核验、证书篡改测试与 2,558 个分支的交叉检查 |
-| Python CI | 配置覆盖 Python 3.10、3.12、3.13；实际结果以对应提交的公开日志为准 |
-| Lean 合约 | 固定 Lean 4.19.0；首版未在本地环境编译，首次 CI 结果待运行核实 |
+| Python CI | Python 3.10、3.12、3.13 均已在[公开运行记录](evidence/ci.md)中通过 |
+| Lean 合约 | Lean 4.19.0 已在[公开运行记录](evidence/ci.md)中完成构建及公理依赖输出；初始本地环境未安装 Lean |
 | 完整搜索的形式化正确性 | 尚未完成 |
 | 常驻 LLM／多 agent 调度 | 尚未接入或部署 |
 | 总猜想 | 本项目未解决 |

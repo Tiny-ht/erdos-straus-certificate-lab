@@ -9,6 +9,11 @@
 **未在该环境编译**。公开 CI 的具体运行结果和 commit 才是构建状态的依据。
 不要把 Python 测试通过当作 Lean 构建通过。
 
+后续公开 CI 已在提交 `4ce2e24817df6eff2887cc6928da3380c64d6865` 上实际通过
+`lake build` 和 `lake env lean Contracts.lean`。具体运行与日志见
+[固定提交的公开 CI 记录](../evidence/ci.md)。日志显示这里的三个非整除定理依赖
+标准公理 `propext`；不能把这组定理描述为完全不依赖任何公理。
+
 即使本目录构建成功，也只验证 `Contracts.lean` 中实际陈述的定理。
 它没有证明 Erdős–Straus 猜想，也没有证明 Python 检查器与 Lean 的实现等价。
 
